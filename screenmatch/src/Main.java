@@ -8,9 +8,9 @@ import br.com.alura.screenmatch.modelos.Pessoa;
 public class Main {
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
-        meuFilme.nome = "Poderoso chefão";
+        meuFilme.setNome("Poderoso chefão");
 
-        System.out.println(meuFilme.nome);
+        System.out.println(meuFilme.getNome());
 
         meuFilme.setAvaliacao(10);
         meuFilme.setAvaliacao(5);

@@ -1,3 +1,8 @@
+import br.com.alura.screenmatch.modelos.Calculadora;
+import br.com.alura.screenmatch.modelos.Filme;
+import br.com.alura.screenmatch.modelos.Musica;
+import br.com.alura.screenmatch.modelos.Pessoa;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -7,10 +12,10 @@ public class Main {
 
         System.out.println(meuFilme.nome);
 
-        meuFilme.avaliacao(10);
-        meuFilme.avaliacao(5);
-        meuFilme.avaliacao(2);
-        System.out.println("total de avaliacao: " + meuFilme.totalDeAvaliacoes);
+        meuFilme.setAvaliacao(10);
+        meuFilme.setAvaliacao(5);
+        meuFilme.setAvaliacao(2);
+        System.out.println("total de avaliacao: " + meuFilme.getTotaldeAvaliacoes());
         System.out.println("Média de avaliacoes: " + meuFilme.pegaMedia());
 
         Pessoa pessoa = new Pessoa();

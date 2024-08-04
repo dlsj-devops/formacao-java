@@ -1,8 +1,8 @@
-//Crie uma classe Musica com atributos titulo, artista, anoLancamento, avaliacao e numAvaliacoes, e métodos
+package br.com.alura.screenmatch.modelos;//Crie uma classe Musica com atributos titulo, artista, anoLancamento, avaliacao e numAvaliacoes, e métodos
 // para exibir a ficha técnica, avaliar a música e calcular a média de avaliações.
 
 public class Musica {
-    String titulo;
+    public String titulo;
     String artista;
     int anoLancamento;
     double avaliacao;
@@ -14,13 +14,13 @@ public class Musica {
         System.out.println("Avaliacoes" + numavaliacoes);
     }
 
-    void avaliacao(double nota) {
+    public void avaliacao(double nota) {
         numavaliacoes ++;
         avaliacao = nota;
         somaAvaliacoes += avaliacao;
     }
 
-    double mediaAvaliacoes() {
+    public double mediaAvaliacoes() {
         return somaAvaliacoes / numavaliacoes;
     }
 }
